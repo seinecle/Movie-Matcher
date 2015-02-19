@@ -164,6 +164,18 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
+    public com.codename1.ui.Button findButton1(Component root) {
+        return (com.codename1.ui.Button)findByName("Button1", root);
+    }
+
+    public com.codename1.ui.Button findButton1() {
+        com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("Button1", Display.getInstance().getCurrent());
+        if(cmp == null && aboutToShowThisContainer != null) {
+            cmp = (com.codename1.ui.Button)findByName("Button1", aboutToShowThisContainer);
+        }
+        return cmp;
+    }
+
     public com.codename1.ui.List findList(Component root) {
         return (com.codename1.ui.List)findByName("List", root);
     }
@@ -521,6 +533,10 @@ public abstract class StateMachineBase extends UIBuilder {
                 onMain_GoToRecommendationsAction(c, event);
                 return;
             }
+            if("Button1".equals(c.getName())) {
+                onMain_Button1Action(c, event);
+                return;
+            }
         }
         if(rootContainerName.equals("SecondForm")) {
             if("CheckBox".equals(c.getName())) {
@@ -541,6 +557,9 @@ public abstract class StateMachineBase extends UIBuilder {
       }
 
       protected void onMain_GoToRecommendationsAction(Component c, ActionEvent event) {
+      }
+
+      protected void onMain_Button1Action(Component c, ActionEvent event) {
       }
 
       protected void onSecondForm_CheckBoxAction(Component c, ActionEvent event) {

@@ -215,4 +215,29 @@ public class StateMachine extends StateMachineBase {
         });
     }
 
+    @Override
+    protected void onMain_Button1Action(Component c, ActionEvent event) {
+        try {
+
+            Container container = new Container();
+            
+            Label i = new Label();
+            Image img = Image.createImage("/tmdb-logo.png");
+            i.setIcon(img);
+
+            TextArea lbl = new TextArea("This product uses the TMDb API but is not endorsed or certified by TMDb.");
+            lbl.setEditable(false);
+            lbl.setFocusable(false);
+            lbl.setUIID("Label");
+            
+            container.addComponent(i);
+            container.addComponent(lbl);
+
+
+            Dialog.show("Attribution", container, null);
+        } catch (IOException ex) {
+            System.out.println("error in acknowl");
+        }
+
+    }
 }

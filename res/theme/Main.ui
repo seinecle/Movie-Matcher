@@ -5,4 +5,6 @@
   </component>
   <component type="Button" name="GoToRecommendations" cloudDestinationProperty="Button1" text="What's recommended this week?" >
   </component>
+  <component type="Button" name="Button1" cloudDestinationProperty="Button1" text="Acknowledgements" >
+  </component>
 </component>
