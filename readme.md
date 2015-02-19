@@ -4,9 +4,11 @@ I am preparing a MOOC opening in September 2015 teaching how to create this app 
 
 #What does the app do?  
 You tell the app your preferences in movie genres, and it downloads the posters of new movie releases corresponding to your preferences.
+![Screenshot one](http://www.clementlevallois.net/mooc-coding/screenshot-one.png)![Screenshot two](http://www.clementlevallois.net/mooc-coding/screenshot-two.png)  
 
 #Can I test the app for real?
-Yes. At the moment it is just on Android, search "Movie Matcher" by Clement Levallois in the Android Store (scroll down the list as this is not the 1st result returned).
+Yes. At the moment it is just on Android, search "Movie Matcher" by Clement Levallois in Google Play (scroll down the list as this is not the 1st result returned).  
+Coming soon to iOS.
 
 #I have zero knowledge in coding. Can I enrol in this course?
 Yes. The course is made for you.
