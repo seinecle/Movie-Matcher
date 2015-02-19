@@ -1,0 +1,15 @@
+﻿To generate a keystore:
+Open the command line in administrator mode.
+type "cmd" in the run prompt
+click on Ctrl + Shift + Enter
+
+Then navigate to the directory where the keytool is located:
+
+cd C:\Program Files (x86)\Java\jdk1.7.0_71\bin
+
+
+Then type this command, replacing fields by your info and replacing ### characters by your password (should be the same for both ### fields).
+
+keytool -genkey -keystore Keystore.ks -alias netclementlevallois -keyalg RSA -keysize 2048 -validity 15000 -dname "CN=Clement, OU=EMLYON, O=EMLYON, L=Lyon, S=NA, C=FR" -storepass #### -keypass #####
+
+

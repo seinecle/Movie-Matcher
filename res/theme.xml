@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource majorVersion="1" minorVersion="6" useXmlUI="false">
+    <ui name="Main" />
+    <ui name="MyListRenderer" />
+    <ui name="SecondForm" />
+    <theme name="Theme">
+        <val key="@includeNativeBool" value="true" />
+    </theme>
+    <image name="twitter-small.png"  />
+</resource>

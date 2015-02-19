@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="MyListRenderer" cloudDestinationProperty="MyListRenderer" >
+  <component type="CheckBox" name="CheckBox" cloudDestinationProperty="CheckBox" text="" >
+  </component>
+  <component type="Label" name="Genre" cloudDestinationProperty="Label" text="Genre" >
+  </component>
+</component>

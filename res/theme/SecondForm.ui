@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="SecondForm" cloudDestinationProperty="SecondForm" layout="BoxLayout" boxLayoutAxis="Y" title="My preferred movie genres" >
+  <component type="List" name="List" cloudDestinationProperty="List"  selectedRenderer="MyListRenderer" unselectedRenderer="MyListRenderer" >
+    <mapItems>
+      <stringItem key="CheckBox" value="false" />
+      <stringItem key="Genre" value="Romantic Comedy" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="CheckBox" value="false" />
+      <stringItem key="Genre" value="Action" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="CheckBox" value="false" />
+      <stringItem key="Genre" value="Science Fiction" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="CheckBox" value="false" />
+      <stringItem key="Genre" value="Adventure" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="CheckBox" value="false" />
+      <stringItem key="Genre" value="Comedy" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="CheckBox" value="false" />
+      <stringItem key="Genre" value="Crime" />
+    </mapItems>
+    <mapItems>
+      <stringItem key="CheckBox" value="false" />
+      <stringItem key="Genre" value="Thriller" />
+    </mapItems>
+  </component>
+</component>

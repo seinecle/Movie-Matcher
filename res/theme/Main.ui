@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Main" cloudDestinationProperty="Main" layout="BoxLayout" boxLayoutAxis="Y" title="Movie Matcher" >
+  <component type="Button" name="Button" cloudDestinationProperty="Button" commandName="My movie preferences" commandId="1" commandAction="SecondForm" commandBack="false" text="My movie preferences" >
+  </component>
+  <component type="Button" name="GoToRecommendations" cloudDestinationProperty="Button1" text="What's recommended this week?" >
+  </component>
+</component>

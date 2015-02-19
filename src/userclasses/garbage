@@ -1,0 +1,10 @@
+//                        ImageIO.getImageIO().saveAndKeepAspect(pathFile, pathFileOut, ImageIO.FORMAT_JPEG, 100, 100, 0.9f, true, true);
+//                        if (fs.exists(pathFile)) {
+//                            Image i = Image.createImage(pathFile);
+//                            i = i.scaled(400, -1);
+////                            Image i = URLImage.createToStorage(null, "fileNameInStorage", pathFile, URLImage.RESIZE_SCALE);
+//                            Label label = new Label();
+//                            label.setIcon(i);
+//                            c.getComponentForm().addComponent(label);
+//                            c.getComponentForm().revalidate();
+//                        }
