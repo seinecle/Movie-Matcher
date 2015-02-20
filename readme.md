@@ -4,11 +4,20 @@ I am preparing a MOOC opening in September 2015 teaching how to create this app 
 
 ##What does the app do?  
 You tell the app your preferences in movie genres, and it downloads the posters of new movie releases corresponding to your preferences.
+  
+  
 ![Screenshot one](http://www.clementlevallois.net/mooc-coding/screenshot-one.png)![Screenshot two](http://www.clementlevallois.net/mooc-coding/screenshot-two.png)  
 
 ##Can I test the app for real?
 Yes. At the moment it is just on Android, search "Movie Matcher" by Clement Levallois in Google Play (scroll down the list as this is not the 1st result returned).  
-Coming soon to iOS.
+If you are now on a mobile phone, [this link will get you directly to the app](https://play.google.com/store/apps/details?id=net.clementlevallois.helloworld&hl=en).  
+  
+   
+![Screenshot three](http://www.clementlevallois.net/mooc-coding/screenshot-three.png)  
+(Coming soon to iOS)  
+
+
+
 
 ##I have zero knowledge in coding. Can I enrol in this course?
 Yes. The course is made for you. You just need a laptop and a mobile phone.
@@ -17,11 +26,13 @@ Yes. The course is made for you. You just need a laptop and a mobile phone.
 Yes. You will learn how to code apps. The framework is Codename One and it is in Java, so if you don't know the language it's an opportunity to try it.  
 
 ##What? The framework is in Java and complete beginners are welcome?
-Yes. Believe me, Java is easy as compared to other languages.  
+Yes. Believe me, Java is easy as compared to other languages (yes, I am looking at you, Javascript).  
+  
+  
 ![Javascript books](http://www.michaelthelin.se/wp-content/uploads/2014/02/book.jpg)  
 
 ##Who does this?
-Clement Levallois. [This is my website](http://www.clementlevallois.net). [This is a blog post](https://exploreyourdata.wordpress.com/2015/02/17/towards-a-mooc-creating-mobile-apps-for-entrepreneurs/) giving the background to this project.
+I am Clement Levallois. [This is my website](http://www.clementlevallois.net). [This is a blog post](https://exploreyourdata.wordpress.com/2015/02/17/towards-a-mooc-creating-mobile-apps-for-entrepreneurs/) giving the background to this project.
 
 ##How can I be alerted when the course starts?
 Join the mailing list [here](https://docs.google.com/forms/d/1j4FaSiQnLEAAW5sObD7nSOgshq1EysefDlo_128y4ZA/viewform?c=0&w=1) or [get in touch on Twitter](https://twitter.com/seinecle)
