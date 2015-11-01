@@ -23,6 +23,7 @@ public class PreferencesManager {
     private static Vector<String> preferredGenresGlobal;
 
     public static void preferenceSaver(List l) {
+        Storage.getInstance().clearStorage();
         preferredGenresGlobal = new Vector();
         for (int i = 0; i < l.getModel().getSize(); i++) {
             Hashtable comp = (Hashtable) l.getModel().getItemAt(i);

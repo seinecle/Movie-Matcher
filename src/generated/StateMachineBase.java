@@ -35,6 +35,7 @@ public abstract class StateMachineBase extends UIBuilder {
         initVars();
         UIBuilder.registerCustomComponent("Button", com.codename1.ui.Button.class);
         UIBuilder.registerCustomComponent("Form", com.codename1.ui.Form.class);
+        UIBuilder.registerCustomComponent("ShareButton", com.codename1.components.ShareButton.class);
         UIBuilder.registerCustomComponent("CheckBox", com.codename1.ui.CheckBox.class);
         UIBuilder.registerCustomComponent("Label", com.codename1.ui.Label.class);
         UIBuilder.registerCustomComponent("List", com.codename1.ui.List.class);
@@ -75,6 +76,7 @@ public abstract class StateMachineBase extends UIBuilder {
         initVars();
         UIBuilder.registerCustomComponent("Button", com.codename1.ui.Button.class);
         UIBuilder.registerCustomComponent("Form", com.codename1.ui.Form.class);
+        UIBuilder.registerCustomComponent("ShareButton", com.codename1.components.ShareButton.class);
         UIBuilder.registerCustomComponent("CheckBox", com.codename1.ui.CheckBox.class);
         UIBuilder.registerCustomComponent("Label", com.codename1.ui.Label.class);
         UIBuilder.registerCustomComponent("List", com.codename1.ui.List.class);
@@ -140,6 +142,18 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
+    public com.codename1.components.ShareButton findShareButton(Component root) {
+        return (com.codename1.components.ShareButton)findByName("ShareButton", root);
+    }
+
+    public com.codename1.components.ShareButton findShareButton() {
+        com.codename1.components.ShareButton cmp = (com.codename1.components.ShareButton)findByName("ShareButton", Display.getInstance().getCurrent());
+        if(cmp == null && aboutToShowThisContainer != null) {
+            cmp = (com.codename1.components.ShareButton)findByName("ShareButton", aboutToShowThisContainer);
+        }
+        return cmp;
+    }
+
     public com.codename1.ui.Label findGenre(Component root) {
         return (com.codename1.ui.Label)findByName("Genre", root);
     }
@@ -164,18 +178,6 @@ public abstract class StateMachineBase extends UIBuilder {
         return cmp;
     }
 
-    public com.codename1.ui.Button findButton1(Component root) {
-        return (com.codename1.ui.Button)findByName("Button1", root);
-    }
-
-    public com.codename1.ui.Button findButton1() {
-        com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("Button1", Display.getInstance().getCurrent());
-        if(cmp == null && aboutToShowThisContainer != null) {
-            cmp = (com.codename1.ui.Button)findByName("Button1", aboutToShowThisContainer);
-        }
-        return cmp;
-    }
-
     public com.codename1.ui.List findList(Component root) {
         return (com.codename1.ui.List)findByName("List", root);
     }
@@ -196,6 +198,30 @@ public abstract class StateMachineBase extends UIBuilder {
         com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("GoToRecommendations", Display.getInstance().getCurrent());
         if(cmp == null && aboutToShowThisContainer != null) {
             cmp = (com.codename1.ui.Button)findByName("GoToRecommendations", aboutToShowThisContainer);
+        }
+        return cmp;
+    }
+
+    public com.codename1.ui.Button findMapButton(Component root) {
+        return (com.codename1.ui.Button)findByName("MapButton", root);
+    }
+
+    public com.codename1.ui.Button findMapButton() {
+        com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("MapButton", Display.getInstance().getCurrent());
+        if(cmp == null && aboutToShowThisContainer != null) {
+            cmp = (com.codename1.ui.Button)findByName("MapButton", aboutToShowThisContainer);
+        }
+        return cmp;
+    }
+
+    public com.codename1.ui.Button findAcknowledgements(Component root) {
+        return (com.codename1.ui.Button)findByName("Acknowledgements", root);
+    }
+
+    public com.codename1.ui.Button findAcknowledgements() {
+        com.codename1.ui.Button cmp = (com.codename1.ui.Button)findByName("Acknowledgements", Display.getInstance().getCurrent());
+        if(cmp == null && aboutToShowThisContainer != null) {
+            cmp = (com.codename1.ui.Button)findByName("Acknowledgements", aboutToShowThisContainer);
         }
         return cmp;
     }
@@ -525,6 +551,10 @@ public abstract class StateMachineBase extends UIBuilder {
             }
         }
         if(rootContainerName.equals("Main")) {
+            if("ShareButton".equals(c.getName())) {
+                onMain_ShareButtonAction(c, event);
+                return;
+            }
             if("Button".equals(c.getName())) {
                 onMain_ButtonAction(c, event);
                 return;
@@ -533,8 +563,12 @@ public abstract class StateMachineBase extends UIBuilder {
                 onMain_GoToRecommendationsAction(c, event);
                 return;
             }
-            if("Button1".equals(c.getName())) {
-                onMain_Button1Action(c, event);
+            if("MapButton".equals(c.getName())) {
+                onMain_MapButtonAction(c, event);
+                return;
+            }
+            if("Acknowledgements".equals(c.getName())) {
+                onMain_AcknowledgementsAction(c, event);
                 return;
             }
         }
@@ -553,13 +587,19 @@ public abstract class StateMachineBase extends UIBuilder {
       protected void onMyListRenderer_CheckBoxAction(Component c, ActionEvent event) {
       }
 
+      protected void onMain_ShareButtonAction(Component c, ActionEvent event) {
+      }
+
       protected void onMain_ButtonAction(Component c, ActionEvent event) {
       }
 
       protected void onMain_GoToRecommendationsAction(Component c, ActionEvent event) {
       }
 
-      protected void onMain_Button1Action(Component c, ActionEvent event) {
+      protected void onMain_MapButtonAction(Component c, ActionEvent event) {
+      }
+
+      protected void onMain_AcknowledgementsAction(Component c, ActionEvent event) {
       }
 
       protected void onSecondForm_CheckBoxAction(Component c, ActionEvent event) {

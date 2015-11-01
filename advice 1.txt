@@ -1,0 +1,5 @@
+Catch error:
+
+Creates a Log that should be deleted, included imports
+
+The stateMachine class can be passed on to other classes with "this"

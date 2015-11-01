@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <component type="Form" name="Main" cloudDestinationProperty="Main" layout="BoxLayout" boxLayoutAxis="Y" title="Movie Matcher" >
+  <component type="ShareButton" name="ShareButton" cloudDestinationProperty="ShareButton" text="Share" >
+  </component>
   <component type="Button" name="Button" cloudDestinationProperty="Button" commandName="My movie preferences" commandId="1" commandAction="SecondForm" commandBack="false" text="My movie preferences" >
   </component>
   <component type="Button" name="GoToRecommendations" cloudDestinationProperty="Button1" text="What's recommended this week?" >
   </component>
-  <component type="Button" name="Button1" cloudDestinationProperty="Button1" text="Acknowledgements" >
+  <component type="Button" name="MapButton" cloudDestinationProperty="MapButton" text="Where am I?" >
+  </component>
+  <component type="Button" name="Acknowledgements" cloudDestinationProperty="Button1" text="Acknowledgements" >
   </component>
 </component>
